@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Labirinto Romântico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Labirinto do Coração</h1>
+    <p>Use as setas ou os botões para encontrar as 3 cartinhas!</p>
+
+    <div id="game-container">
+        <div id="player"></div>
+        <!-- Paredes do labirinto -->
+        <div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div>
+        <div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div>
+        <div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div>
+        <div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div>
+        <div class="wall"></div><div class="wall"></div>
+
+        <div class="letter" id="letter1" data-message="Você é a garota mais linda deste universo."></div>
+        <div class="letter" id="letter2" data-message="Estou me apaixonando a cada dia que se passa por você. Você é maravilhosa."></div>
+        <div class="letter" id="letter3" data-message="Você é incrível, tudo em você é perfeito, seu sorriso, seu cabelo, sua forma de demonstrar interesse. Você é uma jóia muito preciosa, que demorei encontrar. Está ganhando meu coração."></div>
+    </div>
+
+    <div id="message-box" class="hidden">
+        <p id="message-text"></p>
+        <button id="close-button">Fechar</button>
+    </div>
+
+    <!-- Controles para Celular -->
+    <div id="controls-container">
+        <button class="control-btn" id="btn-up">▲</button>
+        <button class="control-btn" id="btn-left">◄</button>
+        <button class="control-btn" id="btn-right">►</button>
+        <button class="control-btn" id="btn-down">▼</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
